@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="#0d6e6a"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.03"
+        android:layout_marginTop="5dp"/>
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:src="@drawable/user" />-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Profile_Image"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:civ_border_width="2dp"
+        android:src="@drawable/user" />
+
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/forget"
+        android:text=""
+        android:id="@+id/usernamep"
+        android:hint="Username"
+        android:textColor="#0d6e6a"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/forget"
+        android:text=""
+        android:hint="Name"
+        android:id="@+id/namep"
+        android:textColor="#0d6e6a"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/forget"
+        android:text=""
+        android:hint="Email"
+        android:id="@+id/emailp"
+        android:textColor="#0d6e6a"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/forget"
+        android:text=""
+        android:hint="Age"
+        android:id="@+id/agep"
+        android:textColor="#0d6e6a"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/forget"
+        android:text=""
+        android:hint="Gender"
+        android:id="@+id/genderp"
+        android:textColor="#0d6e6a"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+        <Button
+
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/grey"
+            android:text="Update"
+            android:id="@+id/updatep"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:cornerRadius="40dp"
+            android:layout_marginLeft="50dp"/>
+
+        <Button
+            android:id="@+id/deletep"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/grey"
+            android:layout_marginLeft="10dp"
+            android:text="Remove"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:cornerRadius="40dp" />
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="441dp"
+            android:layout_marginBottom="15dp"
+            android:alpha="0.20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.276" />
+
+        <ImageButton
+            android:id="@+id/budgetMenu1"
+            android:layout_width="82dp"
+            android:layout_height="54dp"
+            android:background="#3F51B5"
+            android:backgroundTint="@color/grey"
+            android:fadingEdge="none"
+            android:tint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:src="@drawable/ic_fitness_center_fill1_wght700_grad200_opsz48"
+            tools:ignore="UseAppTint" />
+
+        <ImageButton
+            android:id="@+id/incomeMenu2"
+            android:layout_width="82dp"
+            android:layout_height="54dp"
+            android:background="#FFEB3B"
+            android:backgroundTint="@color/grey"
+            android:fadingEdge="none"
+            android:tint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/budgetMenu1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:src="@drawable/ic_vaccines_fill1_wght700_grad200_opsz48"
+            tools:ignore="UseAppTint" />
+
+        <ImageButton
+            android:id="@+id/incomeMenu4"
+            android:layout_width="82dp"
+            android:layout_height="54dp"
+            android:background="#FFEB3B"
+            android:backgroundTint="@color/grey"
+            android:fadingEdge="none"
+            android:scaleType="center"
+            android:tint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/budgetMenu3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:src="@drawable/ic_calculate_fill1_wght700_grad200_opsz48"
+            tools:ignore="UseAppTint" />
+
+        <ImageButton
+            android:id="@+id/budgetMenu3"
+            android:layout_width="82dp"
+            android:layout_height="54dp"
+            android:background="#FFEB3B"
+            android:backgroundTint="@color/grey"
+            android:fadingEdge="none"
+            android:tint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/incomeMenu2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:src="@drawable/ic_fastfood_fill1_wght700_grad200_opsz48"
+            tools:ignore="UseAppTint" />
+
+
+        <ImageButton
+            android:id="@+id/incomeMenu5"
+            android:layout_width="84dp"
+            android:layout_height="54dp"
+            android:background="#FFEB3B"
+            android:backgroundTint="@color/grey"
+            android:fadingEdge="none"
+            android:tint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/incomeMenu4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:src="@drawable/ic_person_fill1_wght700_grad200_opsz48"
+
+            tools:ignore="UseAppTint" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+

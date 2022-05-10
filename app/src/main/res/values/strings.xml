@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">FitnessPack</string>
+    <string name="tv_signin">Login</string>
+    <string name="et_lusername">Username</string>
+    <string name="et_lpassword">Password</string>
+    <string name="tv_forgotpassword">Forgot password ?</string>
+    <string name="tv_lsignin">New User ?</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_lsingup">SignUp</string>
+    <string name="btn_lreset">Reset</string>
+    <string name="tv_bmi">BMI</string>
+    <string name="tv_bmical">BMI Calculator</string>
+    <string name="et_bage">Age</string>
+    <string name="cb_bmgender">Male</string>
+    <string name="cb_bfgender">Female</string>
+    <string name="tv_bgender">Gender :</string>
+    <string name="et_bweight">Weight</string>
+    <string name="et_bheight">Height</string>
+    <string name="btn_bconfirm">Calculate</string>
+    <string name="tv_phead">Profile</string>
+    <string name="tv_pname">Name :</string>
+    <string name="et_pname">Name</string>
+    <string name="tv_pemail">Email :</string>
+    <string name="et_pemail">Email</string>
+    <string name="tv_page">Age :</string>
+    <string name="et_page">Age</string>
+    <string name="tv_pgender">Gender:</string>
+    <string name="et_pgender">Gender</string>
+    <string name="btn_pupdate">Update</string>
+    <string name="btn_premove">Remove</string>
+    <string name="tv_shead">Sign Up</string>
+    <string name="et_susername">Username</string>
+    <string name="et_semail">Email</string>
+    <string name="et_spassword">Password</string>
+    <string name="btn_signup">SIgn Up</string>
+    <string name="cb_terms">I agree to terms and Data Policy</string>
+    <string name="tv_salready">Already haven\'t account ?</string>
+    <string name="btn_slogin">Login</string>
+
+
+</resources>

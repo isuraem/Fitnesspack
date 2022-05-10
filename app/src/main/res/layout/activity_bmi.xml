@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BMI"
+    android:background="@drawable/images">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="BMI Calculator"
+      android:gravity="center"
+      android:textSize="32sp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      android:layout_marginTop="20dp"
+      android:id="@+id/first"
+
+
+      />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/first"
+      android:layout_marginTop="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_marginLeft="30dp"
+      android:id="@+id/data"
+      android:hint="Age"
+      android:textColor="@color/black"
+      android:textAlignment="center"
+      android:background="@drawable/forget"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/data"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/et_bheight"
+        android:hint="Height(cm)"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:background="@drawable/forget"/>
+
+  <EditText
+      android:id="@+id/et_bweight"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/et_bheight"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginRight="30dp"
+      android:background="@drawable/forget"
+      android:hint="Weight(kg)"
+      android:textAlignment="center"
+      android:textColor="@color/black" />
+  <Button
+      android:layout_width="350dp"
+      android:layout_height="50dp"
+      android:backgroundTint="@color/grey"
+      app:cornerRadius="40dp"
+      android:text="Confirm"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      android:textColor="#FFF"
+      android:id="@+id/btn_bconfirm"
+      android:layout_marginRight="20dp"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="40dp"
+      android:layout_below="@+id/et_bweight"/>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:hint="Result"
+      android:gravity="center"
+      android:textSize="32sp"
+      android:layout_below="@+id/btn_bconfirm"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      android:layout_marginTop="30dp"
+      android:id="@+id/tv_result"
+      />
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:hint="Condition"
+      android:gravity="center"
+      android:textSize="32sp"
+      android:layout_below="@+id/tv_result"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      android:layout_marginTop="30dp"
+      android:id="@+id/tv_condition"
+      />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView5"-->
+    <!--            android:layout_width="623dp"-->
+    <!--            android:layout_height="441dp"-->
+    <!--            android:layout_marginBottom="15dp"-->
+    <!--            android:alpha="0.20"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.276" />-->
+
+    <ImageButton
+        android:id="@+id/budgetMenu1"
+        android:layout_width="82dp"
+        android:layout_height="54dp"
+        android:background="#3F51B5"
+        android:backgroundTint="@color/grey"
+        android:fadingEdge="none"
+        android:src="@drawable/ic_fitness_center_fill1_wght700_grad200_opsz48"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UseAppTint" />
+
+    <ImageButton
+        android:id="@+id/incomeMenu2"
+        android:layout_width="82dp"
+        android:layout_height="54dp"
+        android:background="#FFEB3B"
+        android:backgroundTint="@color/grey"
+        android:fadingEdge="none"
+        android:src="@drawable/ic_vaccines_fill1_wght700_grad200_opsz48"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/budgetMenu1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UseAppTint" />
+
+    <ImageButton
+        android:id="@+id/incomeMenu4"
+        android:layout_width="82dp"
+        android:layout_height="54dp"
+        android:background="#FFEB3B"
+        android:backgroundTint="@color/grey"
+        android:fadingEdge="none"
+        android:scaleType="center"
+        android:src="@drawable/ic_calculate_fill1_wght700_grad200_opsz48"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/budgetMenu3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UseAppTint" />
+
+    <ImageButton
+        android:id="@+id/budgetMenu3"
+        android:layout_width="82dp"
+        android:layout_height="54dp"
+        android:background="#FFEB3B"
+        android:backgroundTint="@color/grey"
+        android:fadingEdge="none"
+        android:src="@drawable/ic_fastfood_fill1_wght700_grad200_opsz48"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/incomeMenu2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UseAppTint" />
+
+
+    <ImageButton
+        android:id="@+id/incomeMenu5"
+        android:layout_width="84dp"
+        android:layout_height="54dp"
+        android:background="#FFEB3B"
+        android:backgroundTint="@color/grey"
+        android:fadingEdge="none"
+        android:src="@drawable/ic_person_fill1_wght700_grad200_opsz48"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/incomeMenu4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+
+        tools:ignore="UseAppTint" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
